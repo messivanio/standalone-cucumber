@@ -7,7 +7,9 @@ Given /^I have entered "([^"]*)" into the "([^"]*)" field$/ do |text, field|
 end
 
 Then /^I should see "([^"]*)"$/ do |text|
-  page.should have_content(text)
+  expect(page).to have_content text
 end
 
-
+Given(/^I click on "([^"]*)"$/) do |link|
+  click_on link
+end
