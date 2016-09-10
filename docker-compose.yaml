@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  cucumber:
+    build: .
+    volumes:
+      - .:/standalone-cucumber
+    environment:
+      - APP_HOST=http://www.google.com
+    working_dir: /standalone-cucumber
+    command: bash -c "bundle exec cucumber"
