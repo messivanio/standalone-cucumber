@@ -5,4 +5,6 @@ group(:test) do
   gem 'capybara'
   gem 'rspec'
   gem 'selenium-webdriver'
+  gem 'poltergeist'
+  gem 'capybara-screenshot'
 end
